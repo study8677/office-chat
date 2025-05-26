@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "一个示例应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"测试通过\"",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitlint": "^19.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0"
+  },
+  "keywords": [
+    "example",
+    "app"
+  ],
+  "author": "您的名字",
+  "license": "ISC"
+}
