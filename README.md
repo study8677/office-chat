@@ -4,13 +4,14 @@ Office-Chat 致力于把生成式 AI 深度嵌入 Office 三大核心场景 —�
 
 本仓库提供一个使用 [Google Gemini](https://ai.google.dev/) 的简易聊天 API 实现。
 
+
 ## 快速开始
 
 1. 安装依赖：
    ```bash
    pip install -r requirements.txt
    ```
-2. 设置环境变量 `GOOGLE_API_KEY` 为你的 Gemini API Key。
+
 3. 运行服务：
    ```bash
    python app.py
@@ -19,5 +20,4 @@ Office-Chat 致力于把生成式 AI 深度嵌入 Office 三大核心场景 —�
    ```json
    { "message": "你的问题" }
    ```
-   服务会返回 Gemini 生成的回复。
 
