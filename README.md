@@ -10,7 +10,10 @@ Office-Chat 致力于把生成式 AI 深度嵌入 Office 三大核心场景 —�
    ```bash
    pip install -r requirements.txt
    ```
-2. 设置环境变量 `GOOGLE_API_KEY` 为你的 Gemini API Key。
+2. 在项目根目录创建 `.env` 文件，并写入你的 Gemini API Key：
+   ```bash
+   echo "GOOGLE_API_KEY=你的Key" > .env
+   ```
 3. 运行服务：
    ```bash
    python app.py
@@ -18,6 +21,10 @@ Office-Chat 致力于把生成式 AI 深度嵌入 Office 三大核心场景 —�
 4. 发送 POST 请求到 `http://localhost:8000/chat`，请求体格式如下：
    ```json
    { "message": "你的问题" }
+   ```
+   你可以使用 `curl` 调用：
+   ```bash
+   curl -X POST -H "Content-Type: application/json" -d '{"message":"你好"}' http://localhost:8000/chat
    ```
    服务会返回 Gemini 生成的回复。
 
